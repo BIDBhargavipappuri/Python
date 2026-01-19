@@ -1,7 +1,7 @@
 # Python
 Python projetcs worked are stored in this Repo
 
-# ETL Pipeline Implementation and API Data Handling
+# API Data Handling
 
 •In the initial stages of the project, fetching data from the API endpoint was straightforward when the dataset was relatively small. However, as the data size increased, the API response time became significantly longer, leading to failures in data retrieval.
 
