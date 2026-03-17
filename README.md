@@ -30,5 +30,18 @@ You’ll use it like:
 
 https://api.openweathermap.org/data/2.5/weather?q=London&appid=YOUR_API_KEY
 
+# Write a python code and add some complexity like compare multiple cities weather
+
+1. Multi city comparison
+
+2. Save results to CSV
+
+# User Action
+
+1. Enter cities to check 
+
+
+
+
 
 
