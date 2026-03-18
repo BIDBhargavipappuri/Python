@@ -24,11 +24,11 @@ Correct letter case: Ensure that the PAN numbers are in uppercase letters (if an
    
 It is exactly 10 characters long.
 
-The format is as follows: AAAAA1234A
+The format is as follows: AAAAA1234A .
 
 The first five characters should be alphabetic (uppercase letters).
 
-1.Adjacent characters(alphabets) cannot be the same (like AABCD is invalid; AXBCD is valid)
+1.Adjacent characters(alphabets) cannot be the same (like AABCD is invalid; AXBCD is valid).
 
 2.All five characters cannot form a sequence (like: ABCDE, BCDEF is invalid; ABCDX is valid)
 
