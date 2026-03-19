@@ -10,60 +10,92 @@ PAN Number Validation Dataset.xlsx(its stored on my desktop)
 
 Instructions:
 
-1. Data Cleaning and Preprocessing:
+Data Cleaning and Preprocessing
    
-Identify and handle missing data: PAN numbers may have missing values. These missing values need to be handled appropriately, either by removing rows or imputing values (depending on the context).
+  1. Identify and handle missing data
+     
+    - PAN numbers may have missing values.
+       
+    - Handle them appropriately by removing rows or imputing values.
 
-Check for duplicates: Ensure there are no duplicate PAN numbers. If duplicates exist, remove them.
+  2. Check for duplicates
+     
+    - Ensure there are no duplicate PAN numbers.
+     
+    - Remove duplicates if found.
 
-Handle leading/trailing spaces: PAN numbers may have extra spaces before or after the actual number. Remove any such spaces.
-
-Correct letter case: Ensure that the PAN numbers are in uppercase letters (if any lowercase letters are present).
-
-2. PAN Format Validation: A valid PAN number follows the format:
+ 3.  Handle leading/trailing spaces
    
-It is exactly 10 characters long.
+    - PAN numbers may contain extra spaces.
+     
+    - Remove any leading or trailing spaces.
 
-The format is as follows: AAAAA1234A .
-
-The first five characters should be alphabetic (uppercase letters).
-
-1.Adjacent characters(alphabets) cannot be the same (like AABCD is invalid; AXBCD is valid).
-
-2.All five characters cannot form a sequence (like: ABCDE, BCDEF is invalid; ABCDX is valid)
-
-The next four characters should be numeric (digits).
-
-1.Adjacent characters(digits) cannot be the same (like 1123 is invalid; 1923 is valid).
-
-2.All four characters cannot form a sequence (like: 1234, 2345)
-
-The last character should be alphabetic (uppercase letter).
-
-Example of a valid PAN: AHGVE1276F3.
-
-3. Categorisation:
+ 4.  Correct letter case
    
-Valid PAN: If the PAN number matches the above format.
+    - Ensure all PAN numbers are in uppercase.
+     
+    - Convert lowercase letters to uppercase.
 
-Invalid PAN: If the PAN number does not match the correct format, is incomplete, or contains any non-alphanumeric characters.
+PAN Format Validation
 
-4.Tasks:
+ 1.  Length requirement
+   
+    - PAN must be exactly 10 characters long.
 
-Validate the PAN numbers based on the format mentioned above.
+ 2.  Overall structure
+    
+    - Correct Format: AAAAA1234A. 
 
-Create two separate categories:
+ 3.  First five characters (alphabets)
+    
+    - Must be uppercase alphabetic characters.
+    
+    - Adjacent characters cannot be the same (e.g., AABCD is invalid; AXBCD is valid).
+     
+    - All five characters cannot form a sequence (e.g., ABCDE, BCDEF are invalid; ABCDX is valid).
 
-Valid PAN
-Invalid PAN
+ 4.  Next four characters (digits)
+    
+    - Must be numeric digits.
+    
+    - Adjacent digits cannot be the same (e.g., 1123 is invalid; 1923 is valid).
+    
+    - All four digits cannot form a sequence (e.g., 1234, 2345 are invalid).
 
-5.Create a summary report that provides the following:
+5.   Last character
+   
+    - Must be an uppercase alphabetic character.
 
-Total records processed
+6.   Example
+   
+    - Example of a valid PAN: AHGVE1276F
 
-Total valid PANs
+Categorisation
 
-Total invalid PANs
+ 1.  Valid PAN
+   
+    - Matches the complete PAN format.
 
-Total missing or incomplete PANs (if applicable)
+ 2.  Invalid PAN
+    
+    - Does not match the format, incomplete, or contains non‑alphanumeric characters.
 
+Tasks
+
+ 1.  Validate PAN numbers based on the above rules.
+   
+ 2.   Create two categories:
+   
+     - Valid PAN
+
+     - Invalid PAN
+
+Summary Report
+
+  1. Total records processed
+ 
+  2. Total valid PANs
+  
+  3. Total invalid PANs
+ 
+  4. Total missing or incomplete PANs (if applicable)
