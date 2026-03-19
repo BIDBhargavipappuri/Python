@@ -24,9 +24,9 @@ Highlights:
 
 **Read Parquet files from Blob**
   
-   1) Use `pandas.read_parquet()` with the HTTPS URL of the Parquet file.
+   1) Use Python functions with the HTTPS URL to read the Parquet file
    
-     - Verify:
+     - Verify the connection.
      
      - Data loads successfully.
      
@@ -54,17 +54,17 @@ Highlights:
 
  **Data transformation**  
   
- 1)Create derived fields
+  1) Create derived fields
  
-     - trip duration in minutes using pickup and dropoff timestamps.
+    - trip duration in minutes using pickup and dropoff timestamps.
     
-     - Categorise trips (Short / Medium / Long).
+    - Categorise trips (Short / Medium / Long).
      
-     - Rename columns for consistency.
+    - Rename columns for consistency.
 
  **Load cleaned data into SQL Server**  
  
- 1)Establish SQL Server connection
+ 1)  Establish SQL Server connection
  
     - Use SQLAlchemy + PyODBC to connect to your local SQL Server instance.
     
