@@ -8,7 +8,7 @@ This project demonstrates cloud‑to‑on‑premise data integration, data trans
 
 Highlights:
 
-- Cloud ingestion (Azure Blob Storage)
+- Cloud extraction (Azure Blob Storage)
   
 - Python transformation (Pandas)
   
@@ -31,6 +31,26 @@ wasbs_path = f'wasbs://{blob_container_name}@{blob_account_name}.blob.core.windo
 
 #WASBS path for connection including SAS token
 #wasbs_path = f'wasbs://{blob_container_name}@{blob_account_name}.blob.core.windows.net/{blob_relative_path}?{blob_sas_token}'
+
+# Pandas cannot read a folder
+
+Pandas needs:
+
+- a specific file name
+  
+- a direct file path
+  
+If the folder contains multiple files or no CSV, Pandas fails with 404.
+
+So we will:
+
+- Connect to the Azure Blob folder
+  
+- List all Parquet files inside
+  
+- Read them one by one
+  
+- combine them later
 
 
 #  Processing Steps
