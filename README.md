@@ -51,6 +51,35 @@ Highlights:
     - Ensure datetime columns are proper `datetime` type.
      
     - Ensure numeric columns are `int`/`float` as needed.
+
+ **Data transformation**  
+  
+ 1)Create derived fields
+ 
+     - trip duration in minutes using pickup and dropoff timestamps.
+    
+     - Categorise trips (Short / Medium / Long).
+     
+     - Rename columns for consistency.
+
+ **Load cleaned data into SQL Server**  
+ 
+ 1)Establish SQL Server connection
+ 
+    - Use SQLAlchemy + PyODBC to connect to your local SQL Server instance.
+    
+    - Load DataFrame into SQL table
+    
+    - Use df.to_sql() to insert data into the target table.
+    
+    - Use batch inserts (chunksize) for performance.
+    
+    - Validate load
+    
+    - Check row counts in SQL Server.
+    
+    - Confirm schema and data types.
+
     
   
 
