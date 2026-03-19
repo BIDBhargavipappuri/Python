@@ -22,15 +22,9 @@ Highlights:
 
 # Azure Blob Storage access info
 
-open dataset diabetes
+Container: covid19data
+Account: azureopendatastorage
 
-blob_account_name = "azureopendatastorage"
-
-blob_container_name = "mlsamples"
-
-blob_relative_path = "diabetes"
-
-blob_sas_token = r"" # Blank since container is Anonymous access
 
 # Pandas cannot read a folder
 
