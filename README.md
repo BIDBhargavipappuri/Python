@@ -22,15 +22,15 @@ Highlights:
 
 # Azure Blob Storage access info
 
+open dataset diabetes
+
 blob_account_name = "azureopendatastorage"
-blob_container_name = "nyctlc"
-blob_relative_path = "yellow"
 
-#blob_sas_token = "add your SAS token here" # Construct the path for connection
-wasbs_path = f'wasbs://{blob_container_name}@{blob_account_name}.blob.core.windows.net/{blob_relative_path}'
+blob_container_name = "mlsamples"
 
-#WASBS path for connection including SAS token
-#wasbs_path = f'wasbs://{blob_container_name}@{blob_account_name}.blob.core.windows.net/{blob_relative_path}?{blob_sas_token}'
+blob_relative_path = "diabetes"
+
+blob_sas_token = r"" # Blank since container is Anonymous access
 
 # Pandas cannot read a folder
 
