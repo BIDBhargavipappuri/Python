@@ -20,6 +20,19 @@ Highlights:
   
 - Analytics readiness
 
+# Azure Blob Storage access info
+
+blob_account_name = "azureopendatastorage"
+blob_container_name = "nyctlc"
+blob_relative_path = "yellow"
+
+#blob_sas_token = "add your SAS token here" # Construct the path for connection
+wasbs_path = f'wasbs://{blob_container_name}@{blob_account_name}.blob.core.windows.net/{blob_relative_path}'
+
+#WASBS path for connection including SAS token
+#wasbs_path = f'wasbs://{blob_container_name}@{blob_account_name}.blob.core.windows.net/{blob_relative_path}?{blob_sas_token}'
+
+
 #  Processing Steps
 
 **Read Parquet files from Blob**
