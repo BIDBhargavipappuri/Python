@@ -1,0 +1,11 @@
+1)First describe the requirement, dont try to build the code in 1 attempt, AI will give big large code not easy to understand.
+
+2) If the code is in chunks its easy to understand and easy to debug , do changes .
+
+3) So, try to break down the requirement in to pieces
+
+4) so that we can check for working for non working solutions.
+
+5) Document each step and then execute the code in steps and check for outputs.
+
+6) In the process of doing coding with AI in above steps we understand what works what does not work(Exam- python can not read folders, pyspark can.)
