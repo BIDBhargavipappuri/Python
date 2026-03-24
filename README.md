@@ -53,12 +53,13 @@ https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2019-01.parquet
  **Data cleaning and preprocessing**  
 
   1) Select relevant columns
-     
-    - Keep only the columns needed for analysis (e.g., pickup, dropoff, distance, fare, tip).
+
+     - pickup datetime,dropoff datetime,passenger count,trip distance,fare amount,tip amount,total amount.
+
 
   2) Handle missing and invalid data
      
-    - Drop rows with critical missing values (e.g., timestamps, fare).
+    - Drop rows with critical missing values (- pickup/dropoff timestamp,- fare amount- Zero).
      
     - Remove duplicates.
      
