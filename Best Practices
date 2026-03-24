@@ -1,21 +1,133 @@
-# Don’t ask AI to build the house. Ask it to help you lay one brick at a time—while you inspect every brick.
+# Treat as a **thinking partner**, not a code vending machine.
 
-1) Treat  AI/copiolot as a thinking partner, not a code vending machine.
+Don’t ask AI to build the house. Ask it to help you lay one brick at a time—while you inspect every brick.
 
-1)First describe the requirement, dont try to build the code in 1 attempt, AI will give big large code not easy to understand.
+- Verify with small examples
 
-2) If the code is in chunks its easy to understand and easy to debug , do changes .
+- Ask for explanations
 
-3) So, try to break down the requirement in to pieces
+- Keep context clear
 
-4) so that we can check for working for non working solutions.
+- Don’t accept code blindly
 
-5) Document each step and then execute the code in steps and check for outputs.
+- Run tests
 
-6) In the process of doing coding with AI in above steps we understand what works what does not work.
-      
-   Exam- python can not read folders, pyspark can.
-         Checking data types of each column if required
-         checking if any negative values , null values
+- Provide concrete inputs
 
-7)Make each step by step requirement documented so that It will be easy to track and helps in acheveing expected results
+- Use version control
+
+- Craft clear prompts
+
+1. **Describe the requirement clearly first**  
+   Don’t jump to “give me full code.” Start with:  
+   - What is the input?  
+   - What is the expected output?  
+   - Where is the data coming from?  
+   - Any constraints (size, performance, tools)?
+
+2. **Avoid one-shot big code**  
+   Asking AI for “full project code” leads to:  
+   - Long, hard‑to‑read code  
+   - More bugs  
+   - More hallucinations  
+   Instead, build it **step by step**.
+
+3. **Break the requirement into small pieces**  
+   Example breakdown:  
+   - Step 1: Read data  
+   - Step 2: Clean data  
+   - Step 3: Transform  
+   - Step 4: Load to SQL  
+   - Step 5: Add validation checks  
+
+4. **Work in chunks so debugging is easier**  
+   - Ask AI: “Write only the code to read the file.”  
+   - Run it.  
+   - Then: “Now add cleaning logic.”  
+   - Run it.  
+   This way, you always know **which step broke**.
+
+5. **Check working vs non‑working at each step**  
+   - Print shapes, head(), dtypes  
+   - Check sample rows  
+   - Validate assumptions (no nulls, no negatives, correct types)
+
+6. **Document each step as you go**  
+   - Add comments in code  
+   - Write markdown cells in notebook  
+   - Note: what was tried, what worked, what failed  
+   This becomes **your own mini‑documentation** and helps future you.
+
+7. **Learn while coding with AI**  
+   Don’t just copy‑paste. Ask:  
+   - “Why did you use this function?”  
+   - “What does this regex do?”  
+   - “Can you explain this line?”  
+   This turns AI into a **teacher**, not just a generator.
+
+---
+
+### ⭐ Extra best practices to avoid hallucinations & improve productivity
+
+8. **Always give AI real context**  
+   - Mention: “I’m using Python 3.11”  
+   - “I’m using Jupyter / VS Code / Databricks / Fabric”  
+   - “Data is in CSV / Parquet / SQL / API”  
+   The more concrete you are, the less AI guesses.
+
+9. **Ask for small, testable pieces of code**  
+   Instead of:  
+   > “Write full ETL from API to SQL”  
+   Use:  
+   > “Give  only the function to call this API and return a DataFrame.”  
+   Then:  
+   > “Now add basic cleaning: trim spaces, handle nulls.”
+
+10. **Force AI to show sample input/output**  
+   Ask:  
+   - “Show me example input and expected output.”  
+   - “Print sample rows after this step.”  
+   This helps you see if the logic matches your expectation.
+
+11. **Cross‑check with your own knowledge**  
+   Example:  
+   - “Python cannot read folders directly, but PySpark can list files.”  
+   - “pandas read_csv cannot read multiple files with wildcard in all cases; need glob or loop.”  
+   If AI says something that feels off → **question it**.
+
+12. **Ask AI to explain, not just generate**  
+   - “Explain this code line by line.”  
+   - “Why is this better than approach X?”  
+   This reduces blind trust and increases understanding.
+
+13. **Use AI for patterns, you handle details**  
+   Let AI give:  
+   - Structure  
+   - Boilerplate  
+   - Patterns  
+   You adjust:  
+   - Column names  
+   - Business rules  
+   - Edge cases  
+
+14. **Keep a “known good” version of your code**  
+   - Use Git or at least save copies like `v1`, `v2`  
+   - When AI suggests big changes, don’t overwrite everything  
+   This protects you from “AI broke my working code”.
+
+15. **Be explicit when something is wrong**  
+   Instead of:  
+   > “This is not working.”  
+   Use:  
+   > “I got this error: … Here is the code. Suggest only the fix, don’t rewrite everything.”  
+
+16. **Use AI to generate tests and validation checks**  
+   - “Write assertions to validate this DataFrame.”  
+   - “Write unit tests for this function.”  
+   This helps catch hallucinations in logic.
+
+17. **Limit scope in each prompt**  
+   - One prompt = one clear goal  
+   - Don’t mix: “Explain + write code + optimize + document” in one go  
+   That confuses the model and increases hallucinations.
+
