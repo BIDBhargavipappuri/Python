@@ -54,7 +54,7 @@ https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2019-01.parquet
 
   1) Select relevant columns
 
-     - pickup datetime,dropoff datetime,passenger count,trip distance,fare amount,tip amount,total amount.
+    - pickup datetime,dropoff datetime,passenger count,trip distance,fare amount,tip amount,total amount.
 
 
   2) Handle missing and invalid data
