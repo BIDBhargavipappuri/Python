@@ -81,6 +81,16 @@ https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2019-01.parquet
      
     - Rename columns for consistency.
 
+    
+ **Create Table in SQL to insert data from blob**  
+
+    - Original fields
+    
+    - Cleaned numeric fields
+    
+    - Derived fields (trip_duration_minutes, trip_category
+
+
  **Load cleaned data into SQL Server**  
  
  1)  Establish SQL Server connection
