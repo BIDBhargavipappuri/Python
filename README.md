@@ -20,11 +20,6 @@ Highlights:
   
 - Analytics readiness
 
-# Azure Blob Storage access info
-
-Container: covid19data
-Account: azureopendatastorage
-
 
 # Pandas cannot read a folder
 
@@ -38,26 +33,22 @@ If the folder contains multiple files or no CSV, Pandas fails with 404.
 
 So we will:
 
-- Connect to the Azure Blob folder
-  
-- List all Parquet files inside
-  
-- Read them one by one
-  
-- combine them later
+use direct URL to access , as it it public blob here is the URL ( data set of NYC Taxi public dataset).
+
+https://azureopendatastorage.blob.core.windows.net/nyctlc/yellow/puYear=2019/puMonth=1/yellow_tripdata_2019-01.parquet 
 
 
 #  Processing Steps
 
 **Read Parquet files from Blob**
   
-   1) Use Python functions with the HTTPS URL to read the Parquet file
+   1) Use Python functions with the HTTPS URL to read the Parquet file - 
    
-     - Verify the connection.
-     
-     - Data loads successfully.
-     
-     - Row and column counts look reasonable.
+     - Identifying the correct libraries
+     - Verifying the connection
+     - Loading the Parquet file
+     - Checking row/column counts
+
 
  **Data cleaning and preprocessing**  
 
