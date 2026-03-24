@@ -117,4 +117,7 @@ https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2019-01.parquet
     
     - Confirm schema and data types.
 
+  <img width="1907" height="1022" alt="SQLscreenshot" src="https://github.com/user-attachments/assets/4aa60a4a-bdd3-4229-a91c-1a4955efa2cd" />
+
+
 
