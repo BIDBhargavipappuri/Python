@@ -8,4 +8,8 @@
 
 5) Document each step and then execute the code in steps and check for outputs.
 
-6) In the process of doing coding with AI in above steps we understand what works what does not work(Exam- python can not read folders, pyspark can.)
+6) In the process of doing coding with AI in above steps we understand what works what does not work.
+      
+   Exam- python can not read folders, pyspark can.
+         Checking data types of each column if required
+         checking if any negative values , null values
