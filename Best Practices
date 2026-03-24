@@ -4,7 +4,7 @@
 
 2) If the code is in chunks its easy to understand and easy to debug , do changes .
 
-3) So, try to break down the requirement in to pieces
+3) So, try to break down the requirement in to pieces, so that prompts can be easily given to AI and it will be meaningful to handle.
 
 4) so that we can check for working for non working solutions.
 
