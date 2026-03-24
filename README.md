@@ -88,7 +88,15 @@ https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2019-01.parquet
     
     - Cleaned numeric fields
     
-    - Derived fields (trip_duration_minutes, trip_category
+    - Derived fields (trip_duration_minutes, trip_category)
+
+ **Create Test the Connection to SQL server** 
+
+    try:
+    with engine.connect() as conn:
+    print("✅ Connected successfully to SQL Server")
+    except Exception as e:
+    print("❌ Connection failed:", e)
 
 
  **Load cleaned data into SQL Server**  
