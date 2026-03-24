@@ -6,6 +6,9 @@
 
 3) So, try to break down the requirement in to pieces, so that prompts can be easily given to AI and it will be meaningful to handle.
 
+   - One prompt = one clear goal
+
+
 4) so that we can check for working for non working solutions.
 
 5) Document each step and then execute the code in steps and check for outputs.
