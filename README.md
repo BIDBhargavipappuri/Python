@@ -35,7 +35,7 @@ So we will:
 
 use direct URL to access , as it it public blob here is the URL ( data set of NYC Taxi public dataset).
 
-https://azureopendatastorage.blob.core.windows.net/nyctlc/yellow/puYear=2019/puMonth=1/yellow_tripdata_2019-01.parquet 
+https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2019-01.parquet 
 
 
 #  Processing Steps
