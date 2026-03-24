@@ -98,7 +98,4 @@ https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2019-01.parquet
     
     - Confirm schema and data types.
 
-    
-  
-# Python code stored here 
 
